@@ -9,11 +9,11 @@ const UserSchema = new Schema({
   },
   email: {
     type: String,
-    required: true,
+    required:function()}
   },
   phone: {
     type: Number,
-    required: true,
+    required:function(){this.email == null}
   },
   password: {
     type: String,
