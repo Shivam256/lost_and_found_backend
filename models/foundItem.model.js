@@ -8,7 +8,7 @@ const FoundItemSchema = new Schema({
         required:true,
     },
     location:{
-        type:{
+        name:{
             type:String,
         },
         coordinates:[Number]
